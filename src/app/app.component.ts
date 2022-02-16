@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding-app';
+  numberOfTime: number = 0;
+  hidden=true;
+
+  click() {
+    this.numberOfTime++;
+  }
+
+  show(){
+    if(this.hidden){
+      this.hidden=false;
+    }else{
+      this.hidden = true;
+    }
+    
+
+  }
 }
